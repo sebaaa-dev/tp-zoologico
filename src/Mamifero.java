@@ -1,8 +1,8 @@
 public class Mamifero extends Animal {
     private TipoPelaje pelajeEstado;
 
-    public Mamifero(String nombre,String especie,String hambre,String salud,String higiene,TipoPelaje estadoPelaje){
-        super(nombre,especie,hambre,salud,higiene);
+    public Mamifero(String nombre,String especie,String hambre,String salud,String higiene,String sonidoQueHace,TipoPelaje estadoPelaje){
+        super(nombre,especie,hambre,salud,higiene,sonidoQueHace);
         this.pelajeEstado=estadoPelaje;
     }
 
@@ -28,6 +28,13 @@ public class Mamifero extends Animal {
     public void cambiarPelaje(){
         System.out.println("**se le cae el pelaje a "+getNombre()+",pero ya le esta saliendo**");
         this.pelajeEstado=TipoPelaje.CORTO;
+    }
+
+
+    /// metodos abstractos de animal
+    @Override
+    public Especialidad getTipo() {
+        return Especialidad.MANIFEROS;
     }
 }
 

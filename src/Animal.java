@@ -4,13 +4,15 @@ public abstract class Animal {
     private String hambre;
     private String salud;
     private String higiene;
+    private String sonidoQueHace;
 
-    public Animal(String nombre,String especie,String hambre,String salud,String higiene){
+    public Animal(String nombre,String especie,String hambre,String salud,String higiene,String sonidoQueHace){
         this.nombre=nombre;
         this.especie=especie;
         this.hambre=hambre;
         this.higiene=higiene;
         this.salud=salud;
+        this.sonidoQueHace=sonidoQueHace;
     }
 
     //getters y setters
@@ -56,13 +58,43 @@ public abstract class Animal {
         this.salud = salud;
     }
 
+    public String getSonidoQueHace() {
+        return sonidoQueHace;
+    }
+
+    public void setSonidoQueHace(String sonidoQueHace) {
+        this.sonidoQueHace = sonidoQueHace;
+    }
+
     /// metodos
     //comer
     //ensuciarse
     //enfermarse
-//estadoActual
+    //estadoActual
     //emitir sonido
 
+    public void comer(){
+        System.out.println("**"+getNombre()+" come**");
+        this.hambre="lleno";
+    }
+    public void ensuciarse(){
+        System.out.println("**"+getNombre()+" se ensucia**");
+        this.higiene="sucio";
+    }
+    public void enfermarse(){
+        System.out.println("**"+getNombre()+" se enferma**");
+        this.salud="enfermito";
+    }
+    public String estadoActual(){
+        return "_nombre: "+getNombre()+"\n_especie: "+getEspecie()+"\n_hambre: "+getHambre()+"\n_higiene: "+getHigiene()+"\n_salud: "+getSalud();
+    }
+    public void emitirSonido(){
+        System.out.println("hace "+getSonidoQueHace());
+    }
+
+
+    /// metodo abstracto
+    public abstract Especialidad getTipo();
 
 
 

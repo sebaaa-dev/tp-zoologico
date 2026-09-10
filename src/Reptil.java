@@ -2,8 +2,8 @@ public class Reptil extends Animal{
     private boolean esVenenoso;
     private boolean tienePatas;
 
-    public Reptil(String nombre,String especie,String hambre,String salud,String higiene,boolean esVenenoso,boolean tienePatas){
-        super(nombre, especie, hambre, salud, higiene);
+    public Reptil(String nombre,String especie,String hambre,String salud,String higiene,String sonidoQueHace,boolean esVenenoso,boolean tienePatas){
+        super(nombre, especie, hambre, salud, higiene,sonidoQueHace);
         this.esVenenoso=esVenenoso;
         this.tienePatas=tienePatas;
     }
@@ -30,6 +30,12 @@ public class Reptil extends Animal{
 
     public void mudarPiel(){
         System.out.println("**muda de piel el "+getNombre()+"**");
+    }
+
+    /// metodos abstractos de animal
+    @Override
+    public Especialidad getTipo() {
+        return Especialidad.REPTILES;
     }
 
 }

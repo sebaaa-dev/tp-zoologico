@@ -2,8 +2,8 @@ public class Ave extends Animal{
     private CapacidadDeVuelo capacidadDeVuelo;
     private EstadoPlumas estadoPlumas;
 
-    public Ave(String nombre,String especie,String hambre,String salud,String higiene,CapacidadDeVuelo capacidadDeVuelo,EstadoPlumas estadoDeLasPlumas){
-        super(nombre, especie, hambre, salud, higiene);
+    public Ave(String nombre,String especie,String hambre,String salud,String higiene,String sonidoQueHace,CapacidadDeVuelo capacidadDeVuelo,EstadoPlumas estadoDeLasPlumas){
+        super(nombre, especie, hambre, salud, higiene,sonidoQueHace);
         this.capacidadDeVuelo=capacidadDeVuelo;
         this.estadoPlumas=estadoDeLasPlumas;
     }
@@ -47,5 +47,9 @@ public class Ave extends Animal{
         }
     }
 
-
+    /// metodos abstractos de animal
+    @Override
+    public Especialidad getTipo() {
+        return Especialidad.AVES;
+    }
 }

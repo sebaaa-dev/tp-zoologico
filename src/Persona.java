@@ -51,7 +51,7 @@ public abstract class Persona {
     //calcularSalarioAnual
 
 public String mostrarDatos(){
-    return " nombre: "+this.nombre+"/n dni: "+this.dni+"/n legajo: "+this.legajo+"/n salario: "+this.salario+" ";
+    return " nombre: "+this.nombre+"\n dni: "+this.dni+"\n legajo: "+this.legajo+"\n salario: "+this.salario+" ";
 }
 
 public double calcularSalarioAnual(){
