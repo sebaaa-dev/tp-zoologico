@@ -29,6 +29,7 @@ public class Ave extends Animal{
     //volar
 
     public void cambiarPlumas(){
+        System.out.println(" ");
         if(this.estadoPlumas==EstadoPlumas.BIEN){
             System.out.println("no hace falta cambiar las plumas porque estan bien");
         }else{
@@ -38,6 +39,7 @@ public class Ave extends Animal{
     }
 
     public void volar(){
+        System.out.println(" ");
         if (this.capacidadDeVuelo==CapacidadDeVuelo.VUELA){
             System.out.println("**vuela bien**");
         }else if (this.capacidadDeVuelo==CapacidadDeVuelo.VUELO_LIMITADO){

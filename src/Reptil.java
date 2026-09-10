@@ -29,6 +29,7 @@ public class Reptil extends Animal{
     //mudar piel
 
     public void mudarPiel(){
+        System.out.println(" ");
         System.out.println("**muda de piel el "+getNombre()+"**");
     }
 

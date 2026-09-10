@@ -22,10 +22,12 @@ public class Mamifero extends Animal {
     //cambiarpelaje
 
     public void amamantar(){
+        System.out.println(" ");
         System.out.println("**el "+getNombre()+" amamanta**");
     }
 
     public void cambiarPelaje(){
+        System.out.println(" ");
         System.out.println("**se le cae el pelaje a "+getNombre()+",pero ya le esta saliendo**");
         this.pelajeEstado=TipoPelaje.CORTO;
     }

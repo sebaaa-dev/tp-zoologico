@@ -76,7 +76,7 @@ public class Zoologico {
         }
     }
     public void mostrarInfoDeTodo(){
-        System.out.println("zoologico: "+getNombre());
+        System.out.println("\nzoologico: "+getNombre());
         System.out.println("ubicacion: "+getUbicacion());
         System.out.println("cantidad de animales: "+getCantidadAnimales());
         System.out.println("cantidad de cuidadores: "+getCantidadCuidadores());

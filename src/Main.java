@@ -25,8 +25,9 @@ public class Main {
 
       //  zoo.mostrarAnimales();
 
-        zoo.mostrarInfoDeTodo();
+        //zoo.mostrarInfoDeTodo();
 
-
+        leon.cambiarPelaje();
+leon.estadoActual();
     }
 }

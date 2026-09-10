@@ -31,6 +31,7 @@ public class Cuidador extends Persona{
         }
     }
     public void alimentar(Animal animal){
+        System.out.println("");
         if (puedeCuidar(animal)==true){
             System.out.println("**el cuidador "+getNombre()+" alimento a "+animal.getNombre()+"**");
             animal.setHambre("alimentado");
@@ -39,6 +40,7 @@ public class Cuidador extends Persona{
         }
     }
     public void vacunar(Animal animal){
+        System.out.println(" ");
         if (puedeCuidar(animal)==true){
             System.out.println("**el cuidador "+getNombre()+" vacuno a "+animal.getNombre()+"**");
             animal.setSalud("vacunado");
@@ -47,6 +49,7 @@ public class Cuidador extends Persona{
         }
     }
     public void limpiar(Animal animal){
+        System.out.println(" ");
         if (puedeCuidar(animal)==true){
             System.out.println("**el cuidador "+getNombre()+" limpio a "+animal.getNombre()+"**");
             animal.setHambre("limpio");

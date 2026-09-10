@@ -74,19 +74,23 @@ public abstract class Animal {
     //emitir sonido
 
     public void comer(){
+        System.out.println("");
         System.out.println("**"+getNombre()+" come**");
         this.hambre="lleno";
     }
     public void ensuciarse(){
+        System.out.println(" ");
         System.out.println("**"+getNombre()+" se ensucia**");
         this.higiene="sucio";
     }
     public void enfermarse(){
+        System.out.println("");
         System.out.println("**"+getNombre()+" se enferma**");
         this.salud="enfermito";
     }
     public String estadoActual(){
-        return "_nombre: "+getNombre()+"\n_especie: "+getEspecie()+"\n_hambre: "+getHambre()+"\n_higiene: "+getHigiene()+"\n_salud: "+getSalud();
+
+        return "\n_nombre: "+getNombre()+"\n_especie: "+getEspecie()+"\n_hambre: "+getHambre()+"\n_higiene: "+getHigiene()+"\n_salud: "+getSalud();
     }
     public void emitirSonido(){
         System.out.println("hace "+getSonidoQueHace());
