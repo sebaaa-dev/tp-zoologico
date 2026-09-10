@@ -1,5 +1,6 @@
 
-
+/// este tp lo hicimos en un grupo d 3, pero nos dividimos, haciendo ellos el modelo del club y yo el zoologico (sebastian vallejos)
+/// y los demas integrantes son joaquin core y octavio bellini(creo).
 public class Main {
     public static void main(String[] args) {
         Zoologico zoo = new Zoologico("zoologico utn", "Mar del Plata");
